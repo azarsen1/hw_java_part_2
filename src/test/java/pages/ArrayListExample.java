@@ -1,3 +1,5 @@
+package pages;
+
 import java.util.ArrayList;
 
 public class ArrayListExample {
@@ -5,7 +7,7 @@ public class ArrayListExample {
 
         public ArrayListExample addStudentName (String value){
             arrayList.add(value);
-            System.out.println("Добавили студента " + value + "в базу");
+            System.out.println("Добавили студента " + value + " в базу");
             return this;
         }
 
