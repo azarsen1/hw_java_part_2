@@ -3,6 +3,7 @@ package tests;
 import pages.ArrayListExample;
 import pages.HashMapExample;
 import pages.HashSetExample;
+import pages.LinkedListExample;
 
 public class SmokeTestWithCollections {
     public static void main(String[] args) {
@@ -51,6 +52,22 @@ public class SmokeTestWithCollections {
         HashSetExample.searchUserLogin("Azarsen1");
 
         HashSetExample.removeUserLogin("Azarsen1");
+        System.out.println();
+
+
+        LinkedListExample LinkedListExample = new LinkedListExample();
+        System.out.println("Список задач");
+        System.out.println();
+        LinkedListExample.addTask("Почистить зубы")
+                .addTask("Позавтракать")
+                .addTask("Изученать java")
+                .addTask("Пообедать");
+
+
+        LinkedListExample.findTask("Помыть посуду");
+        LinkedListExample.findTask("Пообедать");
+
+        LinkedListExample.removeTask("Пообедать");
         System.out.println();
 
     }
